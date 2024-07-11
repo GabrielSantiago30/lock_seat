@@ -12,14 +12,11 @@
     --viridiano: #558f85;
     --bronz: #cd7f32;
     --verdemeia-noite: #104154;
+    --verde: #047615;
 }
 
 body {
     background-color: var(--prata);
-}
-
-.menu {
-    color: var(--branco);
 }
 
 a {
@@ -59,19 +56,24 @@ header {
     left: 0;
     right: 0;
     color: var(--branco);
+    display: flex;
 }
 
 .logo,
-.redes {
+.botao {
     width: 25%;
     cursor: pointer;
 }
 
 .logo img {
     width: 60px;
+    flex-direction: column;
+    display: inline-block;
 }
 
 .menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     text-align: center;
     color: var(--branco);
 }
@@ -82,7 +84,7 @@ header {
     height: 100px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 25px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -101,7 +103,7 @@ header {
     width: 100%;
 }
 
-.redes button {
+.botao button {
     width: 40px;
     height: 40px;
     border: none;
@@ -110,17 +112,16 @@ header {
     cursor: pointer;
 }
 
-.redes button i {
+.botao button i {
     font-size: 20px;
     cursor: pointer;
 }
 
 main {
     height: 100%;
-    margin: 0;
+    margin: 0 15px 0 15px;
     padding: 5em 2em 2em;
     background-color: var(--branco);
-
     box-shadow: 0 0 10px;
 }
 
@@ -135,6 +136,27 @@ footer {
     text-align: center;
 }
 
-.cadeira {
+.video {
     text-align: center;
+    padding: 0 20px 0 20px;
+    margin: auto;
+}
+
+.totem {
+    text-align: center;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.cadeira {
+    width: 500px;
+    height: 500px;
+    background-image: url(imagens/aberto.png);
+    margin: auto;
+}
+
+.cadeira:hover {
+    background-image: url(imagens/fechado.png);
 }
